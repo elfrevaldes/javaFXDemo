@@ -13,7 +13,7 @@ public class HelloWorld {
   * prints "Hello World!" to the console
   */
   public void sayHello() {
-    System.out.println("Hello GitHub World!");
+    System.out.println("Hello GitHub!");
   }
 
   /**
