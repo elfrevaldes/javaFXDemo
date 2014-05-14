@@ -1,4 +1,4 @@
 cs246
 =====
 
-Java - Software Design and Development
+CS246: Java - Design and Development 
