@@ -42,16 +42,17 @@ public class Bold extends Application {
   private ArrayList<String> threadList;
   private Button addBtn;
   private VBox root;
+  private Label label;
   /**
   * Method start
   * Initializes the GUI
   */
   @Override
   public void start(Stage stage) {
-    Label label = new Label("Please enter a Runnable class name:");
+    label = new Label("Please enter a Runnable class name:");
     threadList = new ArrayList<String>();
     inputField = new TextField();
-    addBtn = new Button();
+    addBtn = new Button("Add Class");
     root = new VBox();
 
     //handle the button press.
@@ -82,6 +83,9 @@ public class Bold extends Application {
 
   public void setupLayout(Stage stage) {
     stage.setTitle("Boldness Exploration");
+    root.getChildren().add(label);
+    root.getChildren().add(inputField);
+    root.getChildren().add(addBtn);
   }
 
   public void addClass() {
